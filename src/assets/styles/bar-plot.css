@@ -1,0 +1,40 @@
+.bar-plot-wrapper {
+    width: calc(100% - 20px);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 35px;
+    cursor: pointer;
+}
+
+.plot {
+    height: 30px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.plot.selected {
+    border-radius: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.bar {
+    height: 100%;
+    min-width: 1px;
+    background: black;
+}
+
+.bar.selected {
+    background: repeating-linear-gradient( 90deg, green, green 20px, white 20px, white 25px);
+    border-radius: 3px;
+}
+
+.fruit-name {
+    width: 15%;
+}
+
+.total {
+    width: 5%;
+}
