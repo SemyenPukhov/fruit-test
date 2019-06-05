@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "../store";
 import "../App.css";
@@ -13,6 +13,7 @@ const App: React.FC = () => {
       <div className="App">
         <Router>
           <Header />
+          <Redirect exact from="/" to="/fruits" />
           <Route path="/fruits" component={Fruits} />
           <Route path="/favorites" component={Favorites} />
         </Router>
